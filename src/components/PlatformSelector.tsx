@@ -17,9 +17,6 @@ const PlatformSelector = () => {
         {data.map((platform) => (
           <MenuItem key={platform.id}>{platform.name}</MenuItem>
         ))}
-        <MenuItem>Item 1</MenuItem>
-        <MenuItem>Item 2</MenuItem>
-        <MenuItem>Item 3</MenuItem>
       </MenuList>
     </Menu>
   );
