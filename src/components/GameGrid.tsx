@@ -22,7 +22,6 @@ const GameGrid = () => {
       next={fetchNextPage}
       hasMore={!!hasNextPage}
       loader={<Spinner />}
-      ww
     >
       <SimpleGrid
         padding="10px"
