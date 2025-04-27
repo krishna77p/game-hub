@@ -32,6 +32,12 @@ class APIClient<T> {
             .get<T>(this.endpoint + '/' + id)
             .then(res => res.data)
     }
+
+    getTrailer = (id: number | string) => {
+        return axiosInstance
+            .get<FetchResponse<T>>(this.endpoint + '/' + id + '/movies')
+            .then(res => res.data);
+    }
     
 }
 
